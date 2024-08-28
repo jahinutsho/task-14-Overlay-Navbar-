@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container .image {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.container .menu-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  left: 30vw;
+  top: 50vh;
+  height: 80px;
+  width: 200px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.menu-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 1s ease-in-out;
+}
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.menu-content a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  font-family: sans-serif;
+  transition: 0.3s ease-in-out;
+}
+.menu-content a:hover {
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #240b36,
+      #c31432
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #240b36,
+      #c31432
+    ); 
+}
+
+.menu-container .closebtn {
+  position: absolute;
+  top: 36px;
+  right: 48px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.container .menu-icon2 {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  right: 30vw;
+  height: 80px;
+  width: 200px;
+  top: 50vh;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.menu-container2 {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-y: hidden;
+  transition: 1s ease-in-out;
+}
+.menu-content2 {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.menu-content2 a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  font-family: sans-serif;
+  transition: 0.3s ease-in-out;
+}
+.menu-content2 a:hover {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu-container2 .closebtn2 {
+  position: absolute;
+  top: 36px;
+  right: 48px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .container .menu-icon2 {
+    right: 30vw;
+    top: 50vh;
+  }
+  .container .menu-icon {
+    right: 30vw;
+    top: 35vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container .menu-icon2 {
+    left: 25vw;
+    top: 50vh;
+  }
+  .container .menu-icon {
+    left: 25vw;
+    top: 35vh;
+  }
+}
